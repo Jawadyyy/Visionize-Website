@@ -1,0 +1,180 @@
+@font-face {
+    font-family: Interphases;
+    src: URL("fonts/ttinter.ttf");
+}
+
+body {
+    font-family: Interphases;
+    background-image: url('../images/pen.png');
+    background-size: cover;
+}
+
+.nav {
+    height: 50px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1100px;
+    margin-right: 100px;
+    margin-top: -42px;
+}
+
+.logo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    color: aliceblue;
+    margin-top: 0px;
+}
+
+.eye img {
+    width: 30px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.user {
+    margin-left: 1475px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a h5:hover {
+    border-bottom: 2px solid #00e5ff;
+    font-size: 15px;
+    transition: 0.1s;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    border: 1px solid #5b5e58;
+    border-radius: 10px;
+    display: none;
+}
+
+.user:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.dropdown a:hover {
+    background-color: #5b5e58;
+}
+
+.course-container {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.course {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+.course img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+button:disabled {
+    cursor: auto;
+    color: grey;
+}
+
+@media only screen and (max-width: 1366px) {
+    .user {
+        margin-left: 1300px;
+        margin-top: -22px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+    }
+
+    .nav {
+        text-align: right;
+        height: 50px;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1020px;
+        max-width: 1366px;
+    }
+
+}

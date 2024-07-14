@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Interphases;
+    src: URL("fonts/ttinter.ttf");
+}
+
+body {
+    position: relative;
+    font-family: Interphases;
+    background-image: url('../images/lab.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    height: 50px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1100px;
+    margin-right: 100px;
+    margin-top: -42px;
+}
+
+.content {
+    color: aliceblue;
+    text-align: left;
+}
+
+.logo {
+    color: aliceblue;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.eye img {
+    width: 30px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.user {
+    margin-left: 1475px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a h5:hover {
+    border-bottom: 2px solid #00e5ff;
+    font-size: 15px;
+    transition: 0.1s;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    border: 1px solid #5b5e58;
+    border-radius: 10px;
+    display: none;
+}
+
+.user:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.dropdown a:hover {
+    background-color: #5b5e58;
+}
+
+.social {
+    color: aliceblue;
+    text-align: center;
+}
+
+.square-border {
+    float: center;
+    margin-top: 70px;
+    width: 250px;
+    height: 30px;
+    position: fixed;
+    margin-left: 620px;
+    border: 2px solid #ffffff;
+    border-radius: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.square-border:hover {
+    width: 270px;
+    height: 40px;
+    background-color: rgb(49, 49, 48);
+    box-shadow: 5px 5px 20px black;
+    transition: 0.2s;
+}
+
+.square-border a {
+    margin-right: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.square-border a:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.boxent {
+    margin-top: 80px;
+    margin-left: 20px;
+    max-width: 400px;
+    max-height: 410px;
+    padding: 20px;
+    background-color: #5b5e58;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s;
+}
+
+.boxent:hover {
+    margin-top: 80px;
+    margin-left: 30px;
+    max-width: 420px;
+    max-height: 430px;
+    padding: 20px;
+    background-color: #5b5e58;
+    border-radius: 15px;
+    background-color: rgb(49, 49, 48);
+    box-shadow: 5px 5px 20px black;
+    transition: 0.2s;
+}
+
+.report-form {
+    margin-top: -450px;
+    margin-left: 1070px;
+    max-width: 400px;
+    max-height: 410px;
+    padding: 20px;
+    background-color: #5b5e58;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s;
+}
+
+.report-form:hover {
+    margin-top: -450px;
+    margin-left: 1060px;
+    max-width: 420px;
+    max-height: 430px;
+    padding: 20px;
+    background-color: #5b5e58;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 48);
+    box-shadow: 5px 5px 20px black;
+    transition: 0.2s
+}
+
+.report-form label {
+    display: block;
+    margin: 10px 0;
+}
+
+.report-form input,
+.report-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+}
+
+.report-form button {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+@media only screen and (max-width: 1366px) {
+    body {
+        background-position: center;
+    }
+
+    .nav {
+        text-align: right;
+        height: 50px;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1020px;
+        max-width: 1366px;
+    }
+
+
+    .boxent {
+        margin-left: 10px;
+    }
+
+    .report-form {
+        margin-left: 920px;
+    }
+
+    .user {
+        margin-left: 1330px;
+        margin-top: -22px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+    }
+
+    .square-border {
+        margin-top: -30px;
+        margin-left: 545px;
+    }
+}

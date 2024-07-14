@@ -1,0 +1,199 @@
+@font-face {
+    font-family: Interphases;
+    src: URL("fonts/ttinter.ttf");
+}
+
+@font-face {
+    font-family: Lastica;
+    src: url("FontsFree-Net-Lastica.ttf")
+}
+
+body {
+    font-family: Interphases;
+    background-image: url('../images/pen.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.nav {
+    text-align: right;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1100px;
+    margin-right: 100px;
+    margin-top: -42px;
+    transition: 0.15s;
+}
+
+.logo {
+    color: #fff;
+    margin-top: 0px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.eye img {
+    width: 30px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.user {
+    margin-left: 1475px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a h5:hover {
+    border-bottom: 2px solid #00e5ff;
+    font-size: 15px;
+    transition: 0.15s;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    border: 1px solid #5b5e58;
+    border-radius: 10px;
+    display: none;
+}
+
+.user:hover .dropdown {
+    display: block;
+    transition: 0.2s;
+}
+
+.dropdown a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.dropdown a:hover {
+    background-color: #5b5e58;
+}
+
+.welcome-section {
+    margin-top: -50px;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.welcome-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.Name {
+    font-family: Lastica;
+    font-size: 1.4em;
+    text-align: center;
+    text-shadow: 10px 10px 40px black;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.features-section {
+    margin-top: -60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+}
+
+.feature-box {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.feature-box:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.feature-box img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.feature-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.about-us-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #13a1d0;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about-us-button:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 1366px) {
+    .user {
+        margin-left: 1320px;
+        margin-top: -22px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+    }
+
+    .nav {
+        text-align: right;
+        height: 50px;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1020px;
+        max-width: 1366px;
+    }
+}
